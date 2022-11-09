@@ -8,28 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <!-- CSS only -->
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/34d0ba7b20.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="div-menu">
-        <div class="container " id="menu">
-            <div class="row" id="row-1">
+        <div class="container mb-3">
+            <div class="row align-items-center" id="row-1">
                 <div class="col-2" id="div-logo">
                     <img src="img/mercado-libre-logo.png" alt="" id="logo" class="img-menu">
                 </div>
                 <div class="col-7">
-                    <form class="nav-search d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y más…                                                                          |🔎 "  aria-label="Search" id="barra-busqueda" >
-                        <!-- <button class="btn btn-outline-" type=""><img src="img/lupa.png" alt="" id="lupita"></button> -->
-                      </form>            </div>
-                <div class="col-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar productos, marcas y más" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg-white" id="basic-addon2">
+                            <button type="button" class="btn">
+                                <img src="img/lupa.png" alt="" id="lupita">
+                            </button>
+                        </span>
+                      </div>
+                </div>
+                <div class="col-3">
                     <img src="img/star-plus.webp" alt="" class="img-menu" id="disney-plus">
                 </div>
-            </div>    
-        </div>   
-        <div class="container" id="categorias">
-            <div class="row" id="row-2">
+            </div>   
+        </div>
+        <div class="container">
+            <div class="row row-categorias align-items-center justify-content-between" id="row-2">
                 <div class="col-2" id="">
-                    <button id="enviar">
+                    <div class="location">
+                        <div class="location_icon">
+                            <img src="img/ubicacion.png" alt="" id="ubicacion">
+                        </div>
+                        <div class="location_text">
+                            <p id="p-enviar" class="nav-menu-cp-send">Enviar a </p>
+                            <p id="p-address" class="nav-menu-link-cp">Buenos Aires 1977 </p>
+                        </div>
+                    </div>
+                    <!-- <button id="enviar">
                         <div class="row">
                             <div class="col-2" id="div-ubicacion">
                         <img src="img/ubicacion.png" alt="" id="ubicacion">
@@ -40,61 +55,70 @@
                             </div>
                         </div>
 
-                    </button>
+                    </button> -->
                 </div>
-                <div class="col-6 navbar" id="navbar"> 
-
-
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Categorias
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Vehivulos</a></li>
-                            <li><a class="dropdown-item" href="#">Inmubles</a></li>
-                            <li><a class="dropdown-item" href="#">Supermecado</a></li>
-                            <li><a class="dropdown-item" href="#">Tecnologia</a></li>
-                            <li><a class="dropdown-item" href="#">Hogar y muebles</a></li>
-                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
-                            <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              
-                        </ul>
-                      </li>
-
-
-
-                    <a href="" class="lista">Ofertas</a>
-                    <a href="" class="lista">Historial</a>
-                    <a href="" class="lista">Supermercado</a>
-                    <a href="" class="lista">Moda</a>
-                    <a href="" class="lista">Vender</a>
-                    <a href="" class="lista">Ayuda</a>
-                </div>
-                <div class="col-4">
-                    <div class="row" id="usuario">
-                        <div class="col-5">
-                            <a href="" class="lista-2" id="crear-cuenta">Creá tu cuenta</a>
-
+                <div class="col-7"> 
+                    <div class="row justify-content-between">
+                        <div class="col text-center">
+                            <ul class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Categorias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Vehivulos</a></li>
+                                    <li><a class="dropdown-item" href="#">Inmubles</a></li>
+                                    <li><a class="dropdown-item" href="#">Supermecado</a></li>
+                                    <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                                    <li><a class="dropdown-item" href="#">Hogar y muebles</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                                    <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                                    <li><a class="dropdown-item" href="#"></a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      
+                                </ul>
+                            </ul>                        
                         </div>
-                        <div class="col-2">
-                            <a href="" class="lista-2" id="ingresar">Ingresá</a>
-
+                        <div class="col text-center">
+                            <a href="" class="lista">Ofertas</a>
                         </div>
-                        <div class="col-5">
-                            <a href="" class="lista-2" id="compras">Mis Compras </a>
-                            <span></span>
+                        <div class="col text-center">
+                            <a href="" class="lista">Historial</a>
                         </div>
-
+                        <div class="col text-center">
+                            <a href="" class="lista">Supermercado</a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="" class="lista">Moda</a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="" class="lista">Vender</a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="" class="lista">Ayuda</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </div>   
-    </div>
+                    <div class="col-3">
+                        <div class="row" id="usuario">
+                            <div class="col">
+                                <a href="" class="lista-2" id="crear-cuenta">Creá tu cuenta</a>
+
+                            </div>
+                            <div class="col">
+                                <a href="" class="lista-2" id="ingresar">Ingresá</a>
+
+                            </div>
+                            <div class="col">
+                                <a href="" class="lista-2" id="compras">Mis Compras </a>
+                                <span></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+            </div>
 
 
 
