@@ -1,5 +1,47 @@
 body{
-    background-color: slategray;
+    background-color: #e7e7e7;
+}
+.titulo{
+    padding-top: 15px;
+}
+a{
+    text-decoration: none;
+}
+#oferta{
+    background-color:dodgerblue;
+    color: white;
+    font-weight: 500;
+    padding: 2px;
+    border-radius: 4px;
+    font-size: small;
+}
+.producto-
+img{
+    width: 225px;
+}
+#precio-anterior{
+    color: gray;
+    text-decoration: line-through;
+    font-size: smaller;
+}
+.coutas{
+    color: #00a650;
+}
+.envio{
+    color: #00a650;
+}
+#marcas{
+    padding: 15px;
+    text-align: center;
+}
+.img-marca{
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    }
+
+.nombre-marca{
+    padding-left: 25px;
 }
 .img-menu{
     height: 32px;
@@ -18,12 +60,12 @@ body{
     margin-right: 0;
 
 }
-#categorias{
-    margin-left: 40px;
-    margin-right: 0px;
-    margin-block-end: 0px;
 
+.location{
+    display: flex;
+    align-items: center;/*centro verticalmente */
 }
+
 #barra-busqueda{
     height: 36px;
     margin-right: 0px;
@@ -36,7 +78,7 @@ body{
 
 }
 #row-2{
-    height: 37px;
+    height: 35px;
     margin-right: 0;
 
 }
@@ -59,63 +101,53 @@ body{
 }
 
 
-#span-enviar{
+#p-enviar{
     color: rgba(0,0,0,.5);
-    font-size: 12px;
-    height: 30px;
-    margin-right: 50px;
-
+    font-size: 9px;
+    margin:0;
 }
-#buenos-aires{
+
+#p-address{
     color: rgba(0,0,0,.5);
     font-size: 13px;
-    height: 30px;
     font-weight: 600;
-    padding-bottom: 30px;
-
+    margin:0;
 }
+
 #navbar{
-    padding-top: 16px;
+    padding-top: 12px;
     font-size:14px;
-    padding-left: 20px;
 }
 
 .lista{
     text-decoration: none;
     color: rgba(0,0,0,.5);
     margin: 0px;
-    padding-left: 17px;
-}
-#usuario{
-    text-align: right;
-    padding-left: 25px;
-    padding-top: 14px;
-}
-#compras{
-    padding-left: 20px;
+    /* padding-left: 17px; */
 }
 .lista-2{
     text-decoration: none;
     color: rgba(0,0,0,.5);
     margin: 0px;
-    padding-left: 10px;
+    padding-left: 17px;
     font-size: 14px;
 }
-#carrito-compras{
-    height: 20px;
+.row-categorias{
+    display: flex;
+    padding-right: 10px;
 }
 
-li{
-    list-style: none;
-    width: 50px;
-    margin-right: 0px;
-}
-.dropdown-toggle{
-    width: 50px;
-}
-a:hover{
-    color: gray;
-}
 
+
+
+
+/* Clases genericas */
+
+.bg-white{
+    background-color: white !important;
+}
+.margin-0{
+    margin: 0;
+}
 
 
